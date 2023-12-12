@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+/* 미디어쿼리로 0~767px, 1순위 서식은 미디어쿼리 안쓴다. */
+/* @media screen and (max-width: 767px){ */
+    header{
+        height: 60px;
+    }
+    header h1{
+        width: 130px;
+        margin: 0px auto;
+        padding-top: 5px;
+    }
+    header h1 img{
+        width: 100%;
+    }
+    .total_btn, .cart_btn{
+        color: #fff;
+        font-size: 24px;
+        position: absolute;
+        top: 6px;
+        padding: 12px;
+    }
+    .total_btn{
+        left: 10px;
+    }
+    .cart_btn{
+        right: 10px;
+    }
+
+    /* h_top서식 */
+    .lnb{
+        width: 100%;
+        position: fixed;
+        left: -100%; top: 400px;
+        z-index: 9002;
+        transition: 0.5s;
+    }
+    .lnb > ul{ /*근데뭔기준으로 꽉찼다고 보는거야??*/
+        display: flex;
+        flex-wrap: wrap; /*박스에 꽉차면 다음줄로 내려가라*/
+        justify-content: center;
+    }
+    .lnb > ul > li{
+        width: 44%;
+        margin: 0px 2px 4px 2px;
+        text-align: center;
+        background: #9c9c9c;
+    }
+    .lnb > ul > li > a{
+        display: block;
+        line-height: 280%;
+        color: #fff;
+    }
+
+    /* h_bottom서식 */
+    .gnb{
+        width: 100%; height: 100%;
+        position: fixed;
+        left: -100%; top: 0px; /* 창밖으로 숨기기 */
+        background: rgba(0,0,0,.8);
+        z-index: 9000;
+        transition: 0.5s;
+    }
+    .gnb > ul{
+        padding: 100px 1.2%;
+        
+    }
+    .gnb > ul > li{
+        border-bottom: 1px solid #fff;
+        text-indent: 20px;
+    }
+    .gnb > ul > li > a{
+        color: #fff;
+        line-height: 280%;
+        display: block;
+    }
+    .gnb > ul > li > a > i.fa-angle-down{
+        float: right;
+        font-size: 1.1rem;
+        padding: 6px 8px;
+    }
+
+    .sub{display: none;}
+
+    .c_btn{
+        color: #fff;
+        font-size: 2rem;
+        position: absolute;
+        right: 4%; top: 1%;
+        padding: 6px;
+    }
+
+    /* 검색폼 */
+    fieldset{
+        position: fixed;
+        width: 100%;
+        left: -100%; top: 6%; /* 창밖으로 숨기기 */
+        z-index: 9001;
+        text-align: center;
+        transition: 0.5s;
+    }
+    fieldset span{display: none;}
+    fieldset #search{
+        width: 58.97%;
+        height: 30px;
+        border-radius: 26px;
+        text-align: center;
+        border: none;
+    }
+    fieldset label.fa-search{
+        font-size: 1.3rem;
+        transform: translate(-36px, 4px);
+    }
+
+    /* 토글 클릭시 .lnb .gnb .fieldset 나오기 */
+    #toggle:checked + header > .h_top > .lnb{
+        left: 0%;
+    }
+    #toggle:checked + header > .h_top > fieldset{
+        left: 0%;
+    }
+    #toggle:checked + header > .h_bottom > .gnb{
+        left: 0%;
+    }
+
+    /* 메인 */
+    /* section1.슬라이드 */
+    main{}
+    section:not(.visual){
+        padding: 40px 0px;
+    }
+    section > h2{display: none;}
+    .visual{
+        width: 100%;
+    }
+
+    .visual_slide{
+        position: relative;
+        height: 60vh;
+        overflow: hidden;
+    }
+    .visual .swiper-slide{
+        /* position:relative; */
+        overflow: hidden;
+        width: 100%;
+    }
+    .swiper-wrapper div img{
+        /* width: 100%; */
+        width: 390%;
+        /* position: absolute; */
+        transform: translateX(-620px);
+    }
+
+    /* section2.하림펫푸드 사료무료체험 */
+    .free_ex{
+        background: #e32929;
+    }
+    .free_ex article{
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .free_ex article > h2{
+        display: none;
+    }
+    .free_ex img{
+        width: 70%;
+        margin: 0px auto;
+    }
+    .free_ex_right{
+        color: #fff;
+        padding-bottom: 50px;
+    }
+    .free_ex_right > h3{
+        font-size: 1.6rem;
+        font-weight: 200;
+        padding-bottom: 16px;
+    }
+    .free_ex_right > p{
+        font-size: 1rem;
+        line-height: 24px;
+        padding: 10px 0px 30px 0px;
+    }
+    .free_ex_right img{
+        width: 60px;
+        padding-bottom: 10px;
+    }
+
+    /* section3.하림펫 쇼핑하러가기 */
+    /* 상품1보기 */
+    .shop{overflow: hidden;}
+    .shop > h2{
+        display: block;
+        text-align: center;
+        font-weight: 200;
+        font-size: 1.6rem;
+        padding-bottom: 50px;
+    }
+    .shop > h2 img{
+        width: 30px;
+        padding-right: 10px;
+        transform: translateY(8px);
+    }
+    /* 상품2보기 */
+    .product{
+        padding-top: 60px;
+        width: 160%;
+        display: flex;
+
+    }
+    .product li{
+        width: 80%;
+    }
+    .product li img{
+        width: 140px;
+        float: left;
+    }
+    /* 작은 스마트폰화면영역에서 적용되는 서식 */
+    @media screen and (max-width:320px){
+        .product li img{
+            width: 120px;
+        }
+    }
+    /* 상품정보서식 */
+    .info{
+        width: 50.02%; /* 140px; */
+        float:right;
+        padding-top: 10px;
+        font-size: 1rem;
+    }
+    .info > h3{
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .info p{
+        line-height: 150%;
+    }
+    .info > .price{
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #f00;
+        display: inline-block;
+    }
+    .info > p:last-of-type{
+        padding: 20px 0px 0px 0px;
+    }
+
+    /* section4.하림펫 스토리 */
+    .story{
+        background: #f0f0f0;
+    }
+    .story > article{
+        text-align: center;
+    }
+    .story h2{display: none;}
+    .story img{
+        width: 70%;
+        margin: 0px auto;
+    }
+    .story_left{
+        margin-bottom: 50px;
+    }
+    .story_left > h3{
+        font-size: 1.6rem;
+        font-weight: 200;
+        padding-bottom: 16px;
+    }
+    .story_left p{
+        font-size: 1rem;
+        line-height: 24px;
+        padding: 10px 0px 30px 0px;
+    }
+    .story_left img{
+        width: 30px;
+        padding-right: 0.5%;
+        transform: translateY(5px);
+    }
+
+    /* section5.인스타그램 */
+    section .insta{
+        padding-bottom: 20px;
+    }
+    .insta > h2{
+        display: block;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.4rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .insta > h2 img{
+        transform: translateY(10px);
+    }
+    .id_name{
+        font-size: 0.75rem;
+        display: block; /* 두줄로 바꾸기인데 왜 바뀌어? */
+        line-height: 300%;
+    }
+    .gallery{
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 130px);
+    }
+    .gallery > li{
+        overflow: hidden;
+    }
+    .gallery img{
+        width: 100%;
+    }
+    .gallery > li:nth-child(6)~li{ /* 6번째li뒤부터 모두 숨기기 */
+        display: none;
+    }
+
+    /* 푸터서식 */
+    footer{
+        color: #fff;
+    }
+    .f_top{
+        display: flex;
+        height: 80px;
+        background: #989898;
+        flex-wrap: wrap;
+        /* 첫째와막내의 순서변경 속성 */
+        /* flex-direction: column-reverse; */
+    }
+    .f_nav{
+        width: 100%;
+        order:2;
+        background: #1c1c1c;
+        line-height: 280%;
+        text-align: center;;
+    }
+    .f_nav a{
+        color: #fff;
+        padding: 6px 10px;
+    }
+    .f_top > dl{
+        width: 100%;
+        order:1;
+        display: flex;
+        justify-content: space-around;
+        line-height: 240%;
+        font-size: 0.8rem;
+    }
+    /* flex속성을 사용하여 자식요소의 순서를 변경하는 방법
+    1. 부모에 flex-direction:column-reverse
+    2. 자식요소에 order:숫자(낮은숫자가 먼저배치됨) */
+
+    .f_top > dl a{
+        color: #fff;
+    }
+    .f_top > dl dd:first-of-type{
+        width: 60%;
+        overflow: hidden; /* 생략기호 3줄 */
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .f_top span{padding-left: 10px;}
+    
+    /* f_bottom */
+    .f_bottom{}
+    .f_bottom > ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .f_bottom > ul > li{
+        text-align: center;
+    }
+    .f_bottom > ul > li:first-child{
+        order:3;
+        width: 50%;
+    }
+    .f_bottom > ul > li:nth-child(2){
+        order:4;
+        width: 50%;
+    }
+    .f_bottom dl{
+        padding: 12px 4%;
+        line-height: 180%;
+        text-align: left;
+    }
+    .f_bottom dl > dt{
+        font-size: 0.9rem;
+        
+    }
+    .tel > a{
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    .f_bottom > ul > li:nth-child(3){
+        order:2;
+        width: 100%;
+        line-height: 50px;
+    }
+    .f_bottom > ul > li:nth-child(3) i{
+        color: #fff;
+        font-size: 1.4rem;
+        padding: 5px;
+    }
+    .f_bottom > ul > li:last-child{
+        order:1;
+        width: 100%; line-height: 40px;
+    }
+    .f_bottom select{
+        width: 50%; height: 30px;
+        border-radius: 3px;
+    }
+/* } */

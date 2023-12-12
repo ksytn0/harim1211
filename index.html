@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Date" content="2023-12-74T11:42:30+09:00">
+    <meta name="Subject" content="모든 디바이스에 최적화된 반응형웹">
+    <meta name="Titile" content="하림펫푸드 반응형웹">
+    <meta name="Other" content="작성자이름 적기">
+    <meta name="Distribution" content="배포자이름 적기">
+    <meta name="description" content="하림펫푸드 반려동물을 위한 맛춤 건강사료식">
+    <meta name="Copyright" content="하림">
+    <meta name="Build" content="2023-12-04T11">
+    <!-- 아이폰에서 숫자가 전화번호로 인식해서 어둡게 나오는것 방지 -->
+    <meta name="format-detection" content="telephone=no">
+
+    <title>하림펫푸드 반응형 웹 - 메인페이지</title>
+    <!-- 파비콘(favicon)삽입 -->
+    <link href="./images/favicon-16x16.png" type="image/x-icon" rel="shortcut icon">
+    <!-- 초기화 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 기본서식 base폰트, 글자크기, 색상, 링크 -->
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <!-- 공통서식 header,footer 공통서식 -->
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+
+    <!-- mobile해상도 서식(기본서식) -->
+    <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+    <!-- tablet해상도 서식-->
+    <link href="./css/tablet.css" rel="stylesheet" type="text/css">
+    <!-- pc해상도 서식 -->
+    <link href="./css/pc.css" rel="stylesheet" type="text/css">
+    
+    <!-- 스와이퍼 슬라이드 서식 -->
+    <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+    <!-- 폰트어썸 아이콘포트 주소 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
+
+</head>
+<body>
+    <form name="search" method="post" action="search.php">
+        <input type="checkbox" id="toggle">
+
+        <header>
+            <div class="h_top">
+                <h1> <!-- 상단로고 -->
+                    <a href="index.html" title="메인페이지로 바로가기">
+                        <img src="./images/logo2.png" alt="상단로고">
+                    </a>
+                </h1>
+
+                <nav class="lnb"> <!-- 로그인,회원가입 -->
+                    <ul>
+                        <li><a href="login.html" title="로그인">로그인</a></li>
+                        <li><a href="join.html" title="회원가입">회원가입</a></li>
+                        <li><a href="order.html" title="주문조회">주문조회</a></li>
+                        <li><a href="cart.html" title="장바구니">장바구니</a></li>
+                    </ul>
+                </nav>
+
+                <fieldset> <!-- 검색폼 -->
+                    <input type="search" id="search" placeholder="이달의 특가 5%" maxlength="50">
+                    <label for="search" class="fas fa-search"><span>검색버튼</span></label>
+                </fieldset>
+            </div>
+
+            <label for="toggle" class="total_btn">
+                <!-- <img src="./images/w_fold_btn.png" alt="전체메뉴"> -->
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <a href="cart.html" title="장바구니페이지 바로가기" class="cart_btn">
+                <!-- <img src="./images/top_cart_icon.png" alt="장바구니" -->
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <!-- 메인 내비게이션 2단 메뉴 -->
+            <div class="h_bottom">
+                <nav class="gnb">
+                    <label for="toggle" class="c_btn"><i class="fas fa-times"></i></label>
+                    <ul>
+                        <li><a href="brand.html" title="브랜드">브랜드<i class="fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="" title="가장맛있는시간30일">가장 맛있는 시간 30일</a></li>
+                                <li><a href="" title="더리얼">더리얼</a></li>
+                                <li><a href="" title="밥이보약">밥이보약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="delivery.html" title="정기배송">정기배송<i class="fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="" title="정기배송">정기배송</a></li>
+                                <li><a href="" title="빠른배송">빠른배송</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="dog.html" title="DOG">DOG<i class="fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="" title="오늘생산배송">오늘생간배송</a></li>
+                                <li><a href="" title="브랜드별">브랜드별</a></li>
+                                <li><a href="" title="연령별">연령별</a></li>
+                                <li><a href="" title="유형별">유형별</a></li>
+                                <li><a href="" title="샘플신청">샘플신청</a></li>
+                                <li><a href="" title="상품후기">상품후기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cat.html" title="CAT">CAT<i class="fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="" title="오늘생산배송">오늘생산배송</a></li>
+                                <li><a href="" title="브랜드별">브랜드별</a></li>
+                                <li><a href="" title="연령별">연령별</a></li>
+                                <li><a href="" title="유형별">유형별</a></li>
+                                <li><a href="" title="샘플신청">샘플신청</a></li>
+                                <li><a href="" title="상품후기">상품후기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="member.html" title="멤버십">멤버십<i class="fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="" title="멤버십">멤버심</a></li>
+                                <li><a href="" title="이벤트">이벤트</a></li>
+                                <li><a href="" title="골드멤버존">골드멤버존</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="story.html" title="우리 이야기">우리 이야기<i class="fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="" title="우리이야기">우리이야기</a></li>
+                                <li><a href="" title="우리의약속">우리의약속</a></li>
+                                <li><a href="" title="100%휴먼그레이드">100%휴먼그레이드</a></li>
+                                <li><a href="" title="이노베이션">이노베이션</a></li>
+                                <li><a href="" title="제조시설">제조시설</a></li>
+                                <li><a href="" title="반려견동반">반려견동반</a></li>
+                                <li><a href="" title="투어신청">투어신청</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tour.html" title="투어신청">투어신청<i class="fas fa-angle-down"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- section1 -->
+            <section class="visual">
+                <h2>메인슬라이드</h2>
+                <div class="visual_slide"> <!-- 스와이퍼 할아버지 -->
+                    <div class="swiper-wrapper"> <!-- 스와이퍼 아빠 -->
+                        <div class="swiper-slide"> <!-- 스와이퍼 자식 -->
+                            <a href="#" title="대용량으로 든든하게">
+                                <img src="./images/main01.jpg" alt="대용량으로 든든하게">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" title="버거킹 리얼독퍼 출시기념">
+                                <img src="./images/main02.jpg" alt="버거킹 리얼독퍼 출시기념">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" title="국가산업대상">
+                                <img src="./images/main03.jpg" alt="국가산업대상">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" title="신규회원가입">
+                                <img src="./images/main04.jpg" alt="신규회원가입">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" title="정기배송">
+                                <img src="./images/main05.jpg" alt="정기배송">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 페이지네이션 -->
+                    <div class="swiper-pagination"></div>
+                    <!-- 좌우버튼 -->
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                </div>
+            </section>
+            
+            <!-- section2 -->
+            <section class="free_ex">
+                <h2>하림펫푸드 사료무료체험</h2>
+                <article>
+                    <h2>하림펫푸드 사료무료체험</h2>
+                    <img src="./images/sns21.jpg" alt="더 리얼 밀 리뷰를 부탁해">
+                    <div class="free_ex_right">
+                        <h3><img src="./images/gold_icon_7.png" alt="무료"><br>
+                        하림펫푸드 <strong>사료 무료체험</strong></h3>
+                        <p>오래오래 우리함께<br>소중한 반려견 면역력으로 바꾸세요!</p>
+                        <a href="#" title="체험하기" class="button">체험하기</a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- section3 -->
+            <section class="shop">
+                <h2><img src="./images/order_step_icon_4.png" alt="쇼핑"><strong>하림펫 쇼핑</strong>하러가기</h2>
+                <p class="align_c"><a href="#" title="바로가기" class="button">바로가기</a></p> <!--단독a는 transform,position 쓰지마-->
+                <ul class="product">
+                    <li>
+                        <a href="#" title="상품보기">
+                            <img src="./images/product01.jpg" alt="상품1">
+                        </a>
+                        <div class="info">
+                            <h3>[100% 휴먼그레이드 밥이보약]</h3>
+                            <p>DOG 탄탄한 성장</p>
+                            <p>50g &#x00d7;4</p>
+                            <p class="price">판매가 : 15,000원</p>
+                            <p><a href="#" title="구매하기" class=button>구매하기</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" title="상품보기">
+                            <img src="./images/product03.jpg" alt="상품2">
+                        </a>
+                        <div class="info">
+                            <h3>[식재료로 만든 리얼푸드 더:리얼]</h3>
+                            <p>CAT 그레인프리 크런치</p>
+                            <p>닭고기 시니어 1kg</p>
+                            <p class="price">판매가 : 21,000원</p>
+                            <p><a href="#" title="구매하기" class=button>구매하기</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- section4 -->
+            <section class="story">
+                <h2>하림펫스토리</h2>
+                <article>
+                    <h2>하림펫스토리</h2>
+                    <div class="story_left">
+                        <h3><img src="./images/order_step_icon_1.png" alt="아이콘"><strong>하림펫</strong>스토리</h3>
+                        <p>소중한 반려견을 위한<br>하림펫의 다양한 소식을<br>만나보세요!</p>
+                        <a href="#" title="자세히보기" class="button">자세히보기</a>
+                    </div>
+                    <img src="./images/sns13.jpg" alt="펫푸드 게임">
+                </article>
+            </section>
+
+            <!-- section5 -->
+            <section class="insta">
+                <h2><img src="./images/insta_icon.gif" alt="인스타그램">instagram
+                <span class="id_name">@harimpetfood</span></h2>
+                <ul class="gallery">
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns11.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns01.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns14.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns02.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns15.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns16.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns20.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns24.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns25.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns26.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns23.jpg" alt="사진"></a></li>
+                    <li><a href="#" title="sns사진보기"><img src="./images/sns24.jpg" alt="사진"></a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="f_top">
+                <nav class="f_nav">
+                    <a href="#" title="개인정보처리방침">개인정보처리방침</a>
+                    <a href="#" title="이용약관">쇼핑몰 이용약관</a>
+                </nav>
+
+                <dl>
+                    <dt>공지사항</dt>
+                    <dd><a href="#" title="지니펫">지니펫 X 한국헌혈견협회 '건강한' 밥이보약 상품출시</a></dd>
+                    <dd>
+                        <span class='dat'>[2023-03-05]</span>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="f_bottom">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>주문 및 배송문의</dt>
+                            <dd class="tel"><a href="02-2189-6543" title="통화하기">02-2189-6543</a></dd>
+                            <dd>평일 10:00 ~ 17:00 <br>(점심:12시~13시)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>고객센터</dt>
+                            <dd class="tel"><a href="080-250-2304" title="통화하기">080-250-2304</a></dd>
+                            <dd>평일 10:00 ~ 17:00 <br>(점심:12시 ~ 13시)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#" title=""><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" title=""><i class="fa-brands fa-blogger"></i></a>
+                        <a href="#" title=""><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                    <li>
+                        <select onChange="siteUrl(this);">
+                            <option value="">Family Site</option> <!--연결은 js로-->
+                            <option value="https://www.harim.com/main/">(주)하림</option>
+                            <option value="https://harimmall.com/index2.html">하림몰</option>
+                            <option value="https://www.hypork.com/">팜스코</option>
+                            <option value="https://www.orimart.co.kr/">주원산오리</option>
+                            <option value="http://www.nseshop.com/">NS홈쇼핑</option>
+                            <option value="http://www.mexican.co.kr/2020/inner.php?sMenu=main">맥시칸치킨</option>
+                        </select>
+                    </li>
+                </ul>
+
+                <address>
+                    <ul><!-- 내코드 -->
+                        <li>
+                    <p>대전광역시 대덕구 벚꽃길71 (평촌동) &#65372; 상호 및 대표자: (주)한국인삼공사 000 &#124; 
+                        사업자번호 00-000-00000 &#124; 통신판매업신고번호: 제0000 대전대덕 
+                        사업자정보확인 &#124; 호스팅서비스 제공자: (주)한국인삼공사 Email: ginipet@kgc.co.kr 
+                        Copyright&copy;2018 bt korea ginseng corp. all rightes reserved.
+                    </p></li>
+                    <li>
+                    <p>구매안전(에스크로)서비스 가입사실 확인 고객님은 안전거래를 위해 현금등으로 결제시 저희 소핑몰에 가입한 KCP의 구매안전서비스를 이용하실 수 있습니다.</p></li>
+                    </ul>
+                </address>
+            </div>
+        </footer>
+    </form>
+
+    <!-- swiper 스크립트 연결-->
+    <script src="./script/swiper.js"></script>
+    <!-- 자바스크립트 내용 실행 -->
+    <script>
+        function siteUrl(a){
+            // alert('선택했음!!!');
+            if(a.value!='none'){//a!=b: a와b는 같지않다. 옵션을 선택하여 값이 존재한다면
+                window.open(a.value, '_self'); //현재창에서 사이트가 열리도록한다.
+            }
+            else{ //선택하지 않았다면
+                return; //사이트가 연결이 된지 않는다.
+            }
+        }
+
+        // 스와이퍼 슬라이드 스크립트
+        let visual_slide = new Swiper('.visual_slide', {
+            //옵션선택
+            autoplay:{ //자동실행
+                delay: 4000, // 시간 간격
+                disableOnInteraction: true, // true:사용자가 마우스동작으로 슬라이드넘길시 자동재생금지
+            },
+            pagination:{ //컨트롤버튼(페이지네이션)
+                el: ".swiper-pagination", // 클래스명선택
+                clickable: true, // 컨트롤 버튼 클릭시 페이지이동할 수 있도록함
+            },
+            navigation:{ // 좌, 우버튼 기능
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        });
+    </script>
+    
+</body>
+</html>

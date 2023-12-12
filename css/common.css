@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* 헤더 푸터 공통서식 */
+header, footer{
+    background: #484848;
+    position: relative;
+}
+footer{
+    background: #1c1c1c;
+    position: relative;
+}
+
+/* 체크박스 제거 */
+#toggle{display: none;}
+
+footer{
+    background: #1c1c1c;
+    position: relative;
+}
+footer address{
+    border-top: 1px solid #ccc;
+    color: #fff;
+    padding: 15px 2%;
+    line-height: 14px;
+    font-size: 0.7rem;
+}
+
+    /* 버튼공통서식 */
+    .button{
+        font-size: 1rem;
+        background: #fff;
+        padding: 6px 30px;
+        border: 1px solid #ccc;
+        transition: 0.5s;
+    }
+    .button:hover{ /*pc에서안먹힘*/
+        background: #4b4b4b;
+        color: #fff;
+    }
+
+    /* 가운데정렬서식 */
+    .align_c{
+        text-align:center;
+    }
+
+    /* 로그인 서식 */
+    .login{
+        position: relative;
+    }
+    .login_wrap{
+        position: static; /*위의 필드셋 초기화*/
+        width: 320px;
+        margin: 40px auto;
+        text-align: center;
+    }
+    .login_wrap > legend{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+    }
+    .login_wrap > p{
+        margin-bottom: 10px;
+    }
+    .login_wrap input{
+        width: 312px;
+        height: 50px;
+    }
+    .login_wrap input[type=checkbox]{width: 16px; height: 16px;}
+    .login_wrap input[type=button]{
+        width: 320px;
+        font-weight: bold;
+        border: none;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    label[for=id_txt], label[for=pw_txt]{display: none;}
+    #login_btn{background: #f00;}
+    .btn01{background: #25D44B;}
+    .btn02{background: #FFEB00; color: #333 !important;}
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        .login_wrap{
+            padding-bottom: 150px;
+        }
+    }
+
